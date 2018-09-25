@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1537118963563.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3330412124",
+    "id" : "39F0BC90",
+    "lastKnownWriteTime" : 1537224028,
+    "last_content_update" : 1537224028225,
+    "path" : "F:/scratch/Alina/NovaLabs/web/index.Rmd",
+    "project_path" : "index.Rmd",
+    "properties" : {
+        "cursorPosition" : "24,52",
+        "scrollLine" : "0",
+        "source_window_id" : ""
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

@@ -1,0 +1,27 @@
+---
+title: "Sat. Sep 08, 2018 -- Manasas"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+<br>
+
+<center><img src="images/Saturday-9-8-2018-Manasas/IMG_20180908_111604880.jpg" width="350px"></center>  
+
+
+Pictures taken during the teams visit to FTC Season 2018-2019 Kickoff at ECPI University, Manasas, VA.
+
+        
+
+<br> 
+
+### More ...
+
+[images/Saturday-9-8-2018-Manasas/](images/Saturday-9-8-2018-Manasas/)
+
+<br>
+
+### Occassion
+Announcing FTC's challenge for 2018-2019. 

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1537125768359.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4283675464",
+    "id" : "D601DF34",
+    "lastKnownWriteTime" : 1537062614,
+    "last_content_update" : 1537062614,
+    "path" : "F:/scratch/Alina/NovaLabs/web/monday_september_10_2018.Rmd",
+    "project_path" : "monday_september_10_2018.Rmd",
+    "properties" : {
+        "cursorPosition" : "7,0",
+        "ignored_words" : "br,NovaLabs,img,src,jpg,px\n",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

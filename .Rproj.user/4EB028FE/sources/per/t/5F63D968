@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1537061551676.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "166848307",
+    "id" : "5F63D968",
+    "lastKnownWriteTime" : 1537062978,
+    "last_content_update" : 1537062978528,
+    "path" : "F:/scratch/Alina/NovaLabs/web/workflow.Rmd",
+    "project_path" : "workflow.Rmd",
+    "properties" : {
+        "cursorPosition" : "27,0",
+        "ignored_words" : "br,NovaLabs,img,src,jpg,px\n",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

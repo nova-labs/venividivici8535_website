@@ -1,0 +1,45 @@
+---
+title: "FTC NLR-Team-8535"
+author:  ""
+output:
+  html_document:
+    toc: true  
+    toc_float: true 
+    fig_width: 1
+---
+
+<IMG SRC="logo/images9.jpg" ALIGN=”left” width="128px"  border=0 />
+<span style="color:red; font-size:25px; font-weight:bold; background-color:powderblue;">
+Home of FTC Team 8535 -- NOVA LABS
+</span>
+<IMG SRC="logo/images7.jpg" ALIGN=”right” width="128px"/>
+
+
+<hr width="80%">
+
+<center><img src="images/Sunday-9-9-2018-NovaLabs/IMG_20180909_140105370.jpg" width="384px"></center>  
+
+```{r temp, eval=FALSE, echo=FALSE}
+"logo/images7.jpg"
+"images/Saturday-9-8-2018-Manasas/IMG_20180909_1
+"images/Sunday-9-9-2018-NovaLabs/IMG_20180909_140105370.jpg
+128*3
+"logo/images9.jpg"
+```
+
+## Vision
+Inspire and enable younger generation in achieving their dreams in the area of STEAM and help them become better citizens and leaders.Inspire and enable younger generation in achieving their dreams in the area of STEAM and help them become better citizens and leaders.
+
+
+## Mission
+Build a team of young engineers, scientists, entrepreneurs and leaders, by actively engaging them in programs that encourage active collaboration, active community engagement and those that foster leadership skills, communication, critical thinking and negotiation
+
+## How we roll
+
+“We aim to complete all our tasks in an effective and time efficient manner. We will not stop until we are successful. We will persevere regardless of how hard the task is. Whether it’s assembling a Lego skyscraper, or building an actual skyscraper, we will be victorious!”
+
+Our team, the Circuit Breakers, has good amount of experience with robotics. We have done many outreach activities through a non-profit organization, Robotics For Youth (RFY). We have been to expos and events that allowed us to represent who we are. We have introduced FLL and FTC to many kids and we continue giving them advice and information on how to participate in these competitions. We are also giving our expert advice to a rookie FLL team in designing their robot and programming techniques.
+
+This FTC season, we have built a fully functional robot and we have had a good start in programming. In our meetings, we usually split up into groups and accomplish tasks such as building the robot, programming, and our goals towards outreach activities.
+
+This year, we have completed many tasks and we are looking forward to continuing FTC in the future as well.

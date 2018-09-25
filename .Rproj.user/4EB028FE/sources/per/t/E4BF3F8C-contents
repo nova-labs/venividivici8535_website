@@ -1,0 +1,324 @@
+# Scripts for Chapter Trends
+##################################
+
+## load functions
+setwd("C:\\Users\\Tucker\\Documents\\Classes\\stat658\\Scripts")
+
+source("compSmooth.r")
+source("hpsa.r")
+
+
+## load data
+setwd("C:\\Users\\Tucker\\Documents\\Classes\\stat658\\Data")
+
+gassa <- read.table("GasSA_2-11-13.dat")
+gassa.log <- ts(log(gassa),start=1992,frequency=12)
+Wstarts <- read.table("Wstarts.b1",skip=2)[,2]
+Wstarts <- ts(Wstarts,start = 1964,frequency=12)
+pop <- read.table("USpop.dat")
+pop <- ts(pop, start = 1901)
+urban <- read.table("urbanpop.dat")
+urban <- ts(urban[67:1,]*1e-9, start = 1951)
+mau <- read.table("mauna.dat",header=TRUE,sep="")
+mau <- ts(mau,start=1958,frequency=12)
+Ret441 <- read.table("retail441.b1",header=TRUE,skip=2)[,2]
+Ret441 <- ts(Ret441,start = 1992,frequency=12)
+
+
+
+
+############### Figures
+
+
+setwd("C:\\Users\\Tucker\\Documents\\Classes\\stat658\\Figures")
+
+########### Figures of gas SA with smoothing
+
+
+h <- 10
+simple.ma <- rep(1,2*h+1)/(2*h+1)
+gas.trend <- filter(gassa.log,simple.ma,method="convolution")
+gas.trend <- ts(gas.trend,start=1992,frequency=12)
+
+#pdf(file="gasTrend10.pdf",width=4, height=2.3)
+par(mar=c(4,4,2,2)+0.1,cex.lab=.8)
+plot(gassa.log,xlab="Year",ylab="Log Gas  Sales",col=gray(.8),lwd=2)
+lines(gas.trend,lty=2)
+#dev.off()
+
+
+h <- 20
+simple.ma <- rep(1,2*h+1)/(2*h+1)
+gas.trend <- filter(gassa.log,simple.ma,method="convolution")
+gas.trend <- ts(gas.trend,start=1992,frequency=12)
+
+#pdf(file="gasTrend20.pdf",width=4, height=2.3)
+par(mar=c(4,4,2,2)+0.1,cex.lab=.8)
+plot(gassa.log,xlab="Year",ylab="Log Gas  Sales",col=gray(.8))
+lines(gas.trend,lty=3)
+#dev.off()
+
+
+#### Figure of gas SA differences
+
+gas.diff <- diff(gassa.log)
+#pdf(file="gasDiff.pdf",width=4, height=4.6)
+par(oma=c(2,0,0,0),mar=c(2,4,2,2)+0.1,mfrow=c(2,1),cex.lab=.8)
+plot(gassa.log,xlab="",ylab="Log Gas  Sales")
+plot(gas.diff,xlab="",ylab = "Gas Growth Rate")
+mtext(text="Year",side=1,line=1,outer=TRUE)
+#dev.off()
+
+
+#### Figure of gas SA second differences
+
+gas.diff2 <- diff(gas.diff)
+#pdf(file="gasDiff2.pdf",width=4, height=4.6)
+par(oma=c(2,0,0,0),mar=c(2,4,2,2)+0.1,mfrow=c(2,1),cex.lab=.8)
+plot(gassa.log,xlab="",ylab="Log Gas  Sales")
+plot(gas.diff2,xlab="",ylab = "Gas Acceleration")
+mtext(text="Year",side=1,line=1,outer=TRUE)
+#dev.off()
+
+ 
+
+#### Figure of Wstarts: trends motivation example
+ 
+n <- length(Wstarts)
+q <- .0001
+r <- 1
+hp.filters <- hpsa(n,12,q,r)
+
+wstarts.trend <- hp.filters[[1]] %*% Wstarts
+wstarts.seas <- hp.filters[[2]] %*% Wstarts
+wstarts.cycle <- hp.filters[[3]] %*% Wstarts
+wstarts.sa <- wstarts.trend + wstarts.cycle
+
+comps <- ts(cbind(wstarts.trend,wstarts.seas,wstarts.cycle),start=1964,frequency=12)
+#plot(comps)
+cycle <- ts(wstarts.cycle,start=1964,frequency=12)
+
+#pdf(file="WstartsCycle.pdf",width=4, height=4.6)
+par(oma=c(2,0,0,0),mar=c(2,4,2,2)+0.1,mfrow=c(2,1),cex.lab=.8)
+plot(Wstarts, ylab="West Starts",xlab="")
+plot(cycle,xlab="",ylab = "Business Cycle")
+mtext(text="Year",side=1,line=1,outer=TRUE)
+#dev.off()
+
+ 
+###############  Figure of nonlinear regression of pop
+
+n <- length(pop)
+trend <- seq(1,n)
+
+exponential <- function(beta,x)
+{
+	n <- length(x)
+	trend <- seq(1,n)
+	error <- x - (beta[1]*exp(trend*beta[2]))
+	sse <- sum(error^2)
+	return(sse)
+}
+
+fit.lm <- lm(pop ~ trend)
+summary(fit.lm)
+beta.ls <- fit.lm$coef
+mu.ls <- ts((beta.ls[1] + beta.ls[2]*trend)*10e-7,start=1901)
+
+beta <- c(beta.ls[1],0)
+fit.nls <- optim(beta,exponential,x=pop,method="BFGS")
+beta.nls <- fit.nls$par
+mu.nls <- ts(beta.nls[1]*exp(trend*beta.nls[2])*10e-7,start=1901)
+
+#pdf(file="popTrends.pdf",width=4, height=2.3)
+par(mar=c(4,4,2,2)+0.1,cex.lab=.8)
+plot(pop*10e-7,xlab="Year",ylab="U.S. Population",col=gray(.8),lwd=2)
+lines(mu.nls,lty=2,lwd=1)
+lines(mu.ls,lty=3,lwd=1)
+#dev.off()
+ 
+######## Figure of urban pop trends
+
+n <- length(urban)
+trend <- seq(1,n)
+
+beta <- c(0,0)
+fit.nls <- optim(beta,exponential,x=urban,method="BFGS")
+beta.nls <- fit.nls$par
+mu.nls <- ts(beta.nls[1]*exp(trend*beta.nls[2]),start=1951)
+
+#pdf(file="urbanTrends.pdf",width=4, height=2.3)
+par(mar=c(4,4,2,2)+0.1,cex.lab=.8)
+plot(urban,xlab="Year",ylab="Urban Population",col=gray(.8),lwd=2)
+lines(mu.nls,lty=2,lwd=1)
+#dev.off()
+ 
+############ Figure of de-trended U.S. pop
+
+
+p <- 10
+mu.smooth <- filter(pop,rep(1,2*p+1)/(2*p+1),method="convolution")
+mu.smooth <- ts(mu.smooth*10e-7,start= 1901)
+
+n <- length(pop)
+trend <- seq(1,n)
+pop.diff <- diff(pop)
+
+fit.lm <- lm(pop ~ trend)
+beta.ls <- fit.lm$coef
+mu.ls <- ts((beta.ls[1] + beta.ls[2]*trend)*10e-7,start=1901)
+
+beta <- c(beta.ls[1],0)
+fit.nls <- optim(beta,exponential,x=pop,method="BFGS")
+beta.nls <- fit.nls$par
+mu.nls <- ts(beta.nls[1]*exp(trend*beta.nls[2])*10e-7,start=1901)
+
+
+#pdf(file="popDeTrends.pdf",width=4, height=2.3)
+par(mar=c(4,4,2,2)+0.1,cex.lab=.8)
+plot(ts(pop*10e-7 - mu.ls,start=1901),lwd=1,lty=3,
+	ylab="U.S. Population",xlab="Year")
+lines(ts(pop*10e-7 - mu.nls,start=1901),lwd=1,lty=2)
+lines(ts(pop*10e-7 - mu.smooth,start=1901),lwd=1,lty=4)
+lines(pop.diff*10e-7,col=gray(.8),lwd=2)
+#dev.off()
+
+ 
+########### Figure of mauna loa growth rate
+
+mau.diff <- diff(mau)
+
+#pdf(file="maunaDiff.pdf",width=4, height=2.3)
+par(mar=c(4,4,2,2)+0.1,cex.lab=.8)
+plot(mau.diff,xlab="Year",ylab="Mauna Loa")
+#dev.off()
+ 
+ 
+##### Figure of mauna seasonal estimation by parametric methods
+
+n <- length(mau.diff)
+seas.dum <- rep(1,32) %x% diag(12)
+seas.dum <- seas.dum[1:n,1:11]
+
+fit.lm <- lm(mau.diff ~ seas.dum)
+summary(fit.lm)
+resids <- fit.lm$residuals
+fitted <- fit.lm$fitted
+#lines(ts(fitted,start=1958,frequency=12),col=4,lwd=2)
+
+#pdf(file="maunaSeas.pdf",width=4, height=4.6)
+par(oma=c(2,0,0,0),mar=c(2,4,2,2)+0.1,mfrow=c(2,1),cex.lab=.8)
+plot(ts(fitted,start=1958,frequency=12),xlab="",ylab="Seasonal")
+plot(ts(resids,start=1958,frequency=12),xlab="",ylab="Residuals")
+mtext(text="Year",side=1,line=1,outer=TRUE)
+#dev.off()
+
+
+
+######## Figure of motor example for seasonality
+
+ret.diff <- diff(log(Ret441))
+n <- length(ret.diff)
+seas.dum <- rep(1,21) %x% diag(12)
+seas.dum <- seas.dum[1:n,1:11]
+
+fit.lm <- lm(ret.diff ~ seas.dum)
+summary(fit.lm)
+resids <- fit.lm$residuals
+fitted <- fit.lm$fitted
+#lines(ts(fitted,start=1992,frequency=12),col=4,lwd=2)
+
+#pdf(file="motorSeas.pdf",width=4, height=6)
+par(oma=c(2,0,0,0),mar=c(2,4,2,2)+0.1,mfrow=c(3,1),cex.lab=1.2)
+plot(ret.diff,ylab="Motor Growth Rate",xlab="")
+plot(ts(fitted,start=1992,frequency=12),xlab="",ylab="Seasonal")
+plot(ts(resids,start=1992,frequency=12),xlab="",ylab="Residual")
+mtext(text="Year",side=1,line=1,outer=TRUE)
+#dev.off()
+
+acf(resids,plot=FALSE)
+
+
+
+##### Figure of motor seasonal adjustment by smoothers
+
+pseas <- 3
+period <- 12
+seas.smoother <- c(1,rep(0,period-1))
+seas.smoother <- c(rep(seas.smoother,pseas),rep(seas.smoother,pseas),1)/(2*pseas+1)
+
+seas.smooth <- filter(ret.diff,seas.smoother,method="convolution")
+seas.resid <- ret.diff - seas.smooth
+
+#pdf(file="motorSeas2.pdf",width=4, height=6)
+par(oma=c(2,0,0,0),mar=c(2,4,2,2)+0.1,mfrow=c(3,1),cex.lab=1.2)
+plot(ret.diff,ylab="Motor Growth Rate",xlab="")
+plot(ts(seas.smooth,start=1992,frequency=12),xlab="",ylab="Seasonal")
+plot(ts(seas.resid,start=1992,frequency=12),xlab="",ylab="Residual")
+mtext(text="Year",side=1,line=1,outer=TRUE)
+#dev.off()
+
+acf(seas.resid[37:214],plot=FALSE)
+
+
+########### Figure for mauna seasonal adjustments
+ 
+seas.elim <- diff(mau,lag=12)
+
+#pdf(file="maunaSA.pdf",width=4, height=2.3)
+par(mar=c(4,4,2,2)+0.1,cex.lab=.8)
+plot(seas.elim,xlab="Year",ylab="Mauna Loa")
+#dev.off()
+
+
+########### Figure of parametric classical decomposition for Wstarts
+
+n <- length(Wstarts)
+seas.dum <- rep(1,49) %x% diag(12)
+seas.dum <- seas.dum[1:n,1:11]
+trend.dum <- seq(1,n)
+trend2.dum <- trend.dum^2
+
+fit.lm <- lm(Wstarts ~ trend.dum + trend2.dum + seas.dum)
+summary(fit.lm)
+resids <- fit.lm$residuals
+fitted <- fit.lm$fitted
+fitted.seas <- seas.dum %*% fit.lm$coef[4:14]
+fitted.trend <- fitted - fitted.seas
+
+
+#pdf(file="WstartsSeas.pdf",width=4, height=6)
+par(oma=c(2,0,0,0),mar=c(2,4,2,2)+0.1,mfrow=c(3,1),cex.lab=1.2)
+plot(Wstarts,ylab="Starts",xlab="")
+plot(ts(fitted,start=1964,frequency=12),xlab="Trend",ylab="")
+plot(ts(resids,start=1964,frequency=12),xlab="Residuals",ylab="")
+mtext(text="Year",side=1,line=1,outer=TRUE)
+#dev.off()
+
+########### Figure of classical decomposition for Wstarts by smoothing
+
+
+pseas <- 3
+comps <- compSmooth(Wstarts,12,pseas)
+
+#pdf(file="WstartsSeasTrend.pdf",width=4, height=6)
+par(oma=c(2,0,0,0),mar=c(2,4,2,2)+0.1,mfrow=c(3,1),cex.lab=1.2)
+plot(Wstarts,ylab="Starts",xlab="")
+plot(ts(c(rep(NA,47),comps[,1],rep(NA,47)),start=1964,frequency=12),xlab="",ylab="Trend")
+plot(ts(c(rep(NA,47),comps[,2],rep(NA,47)),start=1964,frequency=12),xlab="",ylab="Seasonal")mtext(text="Year",side=1,line=1,outer=TRUE)
+#dev.off()
+ 
+
+##### Figure of residual portions of Wstarts decomposition
+
+#pdf(file="WstartsElim.pdf",width=4, height=4.6)
+par(oma=c(2,0,0,0),mar=c(2,4,2,2)+0.1,mfrow=c(2,1),cex.lab=.8)
+plot(ts(c(rep(NA,47),comps[,3],rep(NA,47)),start=1964,frequency=12),xlab="",ylab="Irregular")
+plot(ts(diff(Wstarts,lag=12),start=1964,frequency=12),xlab="",ylab="Annual Growth")
+mtext(text="Year",side=1,line=1,outer=TRUE)
+#dev.off()
+ 
+
+ 
+
+
