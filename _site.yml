@@ -7,29 +7,45 @@ navbar:
   left:
     - text: "Workflow"
       href: workflow.html
-    - text: ""
-      href: 
-    - text: ""
-      href: 
+      
+    - text: "Google Drive Pictures"
+      href: https://drive.google.com/drive/folders/1TgYwivyGl_R45P0yLfDSHxES6m2wuw5W?usp=sharing
+      
     - text: 'Gallery Wall' ## setting up a drop down menu
       menu:
-        - text: September
-        - text: 'Sat. Sep 08, 2018, Manasas'
-          href: saturday_september_08_2018.html
-          
-        - text: 'Sun. Sep 09 2018, NovaLabs'
-          href: sunday_september_09_2018.html
-          
-        - text: 'Mon. Sep 10 2018, NovaLabs'
-          href: monday_september_10_2018.html
+      - text: "October"
+      - text: 'Mon. Oct 01, 2018, NovaLabs'
+        href: monday_october_01_2018.html
+      - text: 'Sun. Oct 07, 2018, NovaLabs'
+        href: sunday_october_07_2018.html
+        
 
-        - text: 'Sun. Sep 16 2018, NovaLabs'
-          href: sunday_september_16_2018.html
+      - text: September
+      - text: 'Sat. Sep 08, 2018, Manasas'
+        href: saturday_september_08_2018.html
+          
+      - text: 'Sun. Sep 09 2018, NovaLabs'
+        href: sunday_september_09_2018.html
+          
+      - text: 'Mon. Sep 10 2018, NovaLabs'
+        href: monday_september_10_2018.html
 
-        - text: 'Mon. Sep 17 2018, NovaLabs'
-          href: monday_september_17_2018.html
-        - text: "---------"
-        - text: October
+      - text: 'Sun. Sep 16 2018, NovaLabs'
+        href: sunday_september_16_2018.html
+
+      - text: 'Mon. Sep 17 2018, NovaLabs'
+        href: monday_september_17_2018.html
+          
+      - text: 'Sun. Sep 23 2018, NovaLabs'
+        href: sunday_september_23_2018.html
+          
+      - text: 'Mon. Sep 24 2018, NovaLabs'
+        href: sunday_september_24_2018.html
+          
+      - text: 'Sun. Sep 30, 2018, NovaLabs'
+        href: sunday_september_30_2018.html
+        
+
         
   right:
     - text: "Contact us"

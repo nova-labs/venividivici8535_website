@@ -1,5 +1,5 @@
 ---
-title: "Mon. Sep 19, 2018 -- NovaLabs"
+title: "Mon. Sep 10, 2018 -- NovaLabs"
 output:
   html_document:
     toc: true
@@ -25,7 +25,8 @@ Assembling the playing field
 
 ### More ...
 
-[images/Monday-9-10-2018-NovaLabs/](images/Monday-9-10-2018-NovaLabs)
+[Google drive images Monday-9-10-2018-NovaLabs](https://drive.google.com/drive/folders/1TgYwivyGl_R45P0yLfDSHxES6m2wuw5W?usp=sharing)
+
 
 
 <br>

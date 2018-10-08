@@ -1,5 +1,5 @@
 ---
-title: "Sun. Sep 09, 2018 -- NovaLabs"
+title: "Sun. Sep 23, 2018 -- NovaLabs"
 output:
   html_document:
     toc: true
@@ -8,7 +8,7 @@ output:
 
 <br>
 
-<center><img src="images/Sunday-9-9-2018-NovaLabs/IMG_20180909_150725496.jpg" width="350px"></center>  
+<center><img src="images/Sunday-9-23-2018-NovaLabs/IMG_20180923_133519410.jpg" width="350px"></center>  
 
 <p>
 <br>
@@ -25,7 +25,7 @@ Pictures taken during the teams visit to FTC Season 2018-2019 Kickoff at ECPI Un
 
 ### More ...
 
-[Google drive images Sunday-9-9-2018-NovaLabs](https://drive.google.com/drive/folders/1TgYwivyGl_R45P0yLfDSHxES6m2wuw5W?usp=sharing)
+[images/Sunday-9-23-2018-NovaLabs/](images/Sunday-9-23-2018-NovaLabs/)
 
 
 <br>
