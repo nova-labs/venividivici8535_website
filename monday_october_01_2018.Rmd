@@ -10,7 +10,7 @@ output:
 
 <center>
 <!--img src="images/Monday-10-01-2018-NovaLabs/IMG_20181001_201041476.jpg" width="350px" -->
-<img src="https://drive.google.com/drive/folders/15mLoQFXYiQ4BEVSrhxJ6XIl4Eoy0rOpR?ogsrc=32/IMG_20181001_201041476.jpg" width="350px">
+<img src="images/Monday-10-01-2018-NovaLabs/IMG_20181001_201041476.jpg" width="350px">
 
 </center>  
 

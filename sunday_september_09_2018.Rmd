@@ -8,7 +8,7 @@ output:
 
 <br>
 
-<center><img src="images/Sunday-9-9-2018-NovaLabs/IMG_20180909_150725496.jpg" width="350px"></center>  
+<center><img src="images/Sunday-9-9-2018-NovaLabs/IMG_20180909_140105370.jpg" width="350px"></center>  
 
 <p>
 <br>
@@ -18,7 +18,7 @@ output:
 Pictures taken during the teams visit to FTC Season 2018-2019 Kickoff at ECPI University, Manasas, VA.
 
 ```{r eval=FALSE, echo=FALSE}
-"images/Sunday-9-9-2018-NovaLabs/IMG_20180909_150725496.jpg"
+"images/Sunday-9-9-2018-NovaLabs/IMG_20180909_140105370.jpg"
 ```
 
 <br> 
