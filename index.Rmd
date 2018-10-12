@@ -10,16 +10,18 @@ output:
     toc: yes
 ---
 
+
+<br>
+
 <IMG SRC="logo/images9.jpg" ALIGN="left" width="128px"  border=0 />
-<span style="color:red; font-size:25px; font-weight:bold; background-color:powderblue;">
-Home of FTC Team 8535 -- NOVA LABS
+&nbsp;<span style="color:red; font-size:25px; font-weight:bold; background-color:powderblue;">
+ &nbsp;&nbsp; Home of FTC Team 8535 -- NOVA LABS &nbsp; &nbsp;&nbsp;
 </span>
-<IMG SRC="logo/images7.jpg" ALIGN="right" width="128px"/>
+<IMG SRC="logo/images7.jpg" ALIGN="right" width="128px" border=0 />
 
-
-<hr width="80%">
+<br>
 <center>
- <img src="images/Sunday-9-9-2018-NovaLabs/IMG_20180909_140105370.jpg" width="384px">
+ <img src="images/Sunday-9-9-2018-NovaLabs/IMG_20180909_140105370.jpg" width="300px" border=2>
 </center>  
 
 ```{r temp, eval=FALSE, echo=FALSE}
@@ -32,41 +34,104 @@ Home of FTC Team 8535 -- NOVA LABS
 
 ```
 
-## Vision
-Vision statement goes here ...
 
+***
+
+## MISSION STATEMENT
+
+```yml
+
+As FTC team 8535, our mission is to introduce younger kids into robotics and STEM, and create a new, STEM-loving generation to improve and explore the world.
+
+```
+
+***
 
 <br>
-Sample statement:
+
+
+## INDIVIDUAL BIO’s
+
+Our group consists of a group of high schools students from the Fairfax country community.  Individual interest are alisted below:
+
+<br>
+
+### Anika Natarajan
 
 ```yml
-Inspire and enable younger generation in achieving their dreams in the area of STEAM and help them become better citizens and leaders.Inspire and enable younger generation in achieving their dreams in the area of STEAM and help them become better citizens and leaders.
+Hello. My name is Anika Natarajan. I am in 8th and attend Herndon Middle School. This is my first time being part of FIRST and I am enjoying it! I am part of the build team! In my spare time,  I  love to draw landscapes  and  painting,  channeling my inner creativity.
 ```
+<br>
 
-
-## Mission
-
-Mission goes here ...<br>
-
-Sample mission:
+### Alina Ampeh
 
 ```yml
-Build a team of young engineers, scientists, entrepreneurs and leaders, by actively engaging them in programs that encourage active collaboration, active community engagement and those that foster leadership skills, communication, critical thinking and negotiation
+Hi! I’m Alina Ampeh and I'm a junior at Thomas Jefferson High School for Science and Technology. I got involved with FIRST over this past summer where I mentored at FLL camps, and through that experience I decided to join a FTC team. I am on the build team and programming team, and also love to help the outreach team coordinate event. Outside of FIRST, I enjoy playing as the goalie for my school’s lacrosse team, and training my pets.
 ```
 
-## How we roll
+<br>
 
-Not sure if we need this
-
-Sample text:<br>
+### Arthur Haneline
 
 ```yml
-We aim to complete all our tasks in an effective and time efficient manner. We will not stop until we are successful. We will persevere regardless of how hard the task is. Whether it's assembling a Lego skyscraper, or building an actual skyscraper, we will be victorious!
+Hello. My name is Arthur Haneline and I am a Freshman at Herndon High School. I have been participating in FTC for three years and love it. I am the build captain and also part of the outreach team.  Beyond FTC, i am involved in marching band and enjoy reading!
+```
+
+<br>
+
+### Aakash Natarajan 
+
+```yml
+Hi. My name is Aakash Natarajan. I am in 8th grade and attend Herndon Middle School. This is my first year in FTC and love it very much!  In my spare time , I focus on basketball and football. I also love to read!
+```
+
+<br>
+
+### Shayoan Fadaghi
+
+```yml
+Hello. My name is Shayoan Fadaghi. I am a junior that goes to Pootmac Falls high school. This is my first time participating in FTC. I love being part of the build team because I get to  brainstorm innovative ideas to help build an amazing robot! Outside of FTC, I LOVE  to play video games and hangout with my school friends. 
+```
+
+<br>
+
+### Maria Tellez
+
+```yml
+Hi there, I am Maria Tellez Casildo. I am a Freshman at Herndon High School. This is my third year of FTC. I am apart of the Engineering Notebook team, as well as the Outreach team, but I also help with the mechanical team. Apart from my passion with robotics, I am also passionate about art, eating, and soccer.
+```
+
+***
+
+<br>
+
+## WHAT WE DO
+
+*FTC definition* - FTC stands for FIRST tech challenge, it is a competition where you build, design, and program a robot to overcome challenges and play against other team’s robots. The competitors are middle and high school-aged students.
+Teams of middle and high school-aged
+
+
+***
+
+<br>
+
+## GAMEPLAN 
+
+```yml
+
+Game plan 123 ....
 
 ```
 
-> Our team, the Circuit Breakers, has good amount of experience with robotics. We have done many outreach activities through a non-profit organization, Robotics For Youth (RFY). We have been to expos and events that allowed us to represent who we are. We have introduced FLL and FTC to many kids and we continue giving them advice and information on how to participate in these competitions. We are also giving our expert advice to a rookie FLL team in designing their robot and programming techniques.
+<br>
 
->> This FTC season, we have built a fully functional robot and we have had a good start in programming. In our meetings, we usually split up into groups and accomplish tasks such as building the robot, programming, and our goals towards outreach activities.
+***
 
->>> This year, we have completed many tasks and we are looking forward to continuing FTC in the future as well.
+## HOW TO ENROLL
+
+> You can enroll by reaching out to us at:
+
+>> Veni-vidi-vici<br>
+>> <i>Email: <a href="mailto:ftcteam8535@gmail.com?subject=Interested in joining NovaLabs 8353!&Please respond.">ftcteam8535@gmail.com</a></i>
+
+<br>

@@ -4,6 +4,7 @@ output_dir: "." ## if making website hostable on github with jekyll
 
 navbar:
   title: "HOME"
+  icon: fa-home  # handy way to use FontAwesome icons in nav!
   left:
     - text: "Workflow"
       href: workflow.html
@@ -49,25 +50,28 @@ navbar:
 
         
   right:
-    - text: "Contact us"
-      icon: fa-envelope-o
-      #href: mailto:wampeh@gmail.com                    # CHANGE HERE 
+    - icon: fa-envelope-o
       href: contact.html
-      
+        
     #- text: "GitHub"
     - icon: fa-github fa-lg
       href: https://github.com/nova-labs/venividivici8535
-      
-    - icon: fa-twitter fa-lg
-      href: https://twitter.com/wampeh
-      
+        
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/venividivici8535/
+
+    - icon: fa fa-instagram
+      href: https://www.instagram.com/robertmitchellv/team_8535
+        
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/wampeh
       
 
 output:
   html_document:
     theme: yeti
+# Other Thmes -- https://bootswatch.com/slate/
+#    theme: yeti
 #    theme: cosmo
 #    theme: sandstone ## black packground
 #    theme: paper      ## white back ground
