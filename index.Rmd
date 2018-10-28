@@ -117,9 +117,23 @@ Teams of middle and high school-aged
 
 ## GAMEPLAN 
 
+### ROBOT
+
 ```yml
 
-Game plan 123 ....
+Robot Game plan 123 ....
+
+```
+
+***
+
+<br>
+
+### COMMUNITY OUTREACH 
+
+```yml
+
+Outrearch 123 ....
 
 ```
 
@@ -129,9 +143,8 @@ Game plan 123 ....
 
 ## HOW TO ENROLL
 
-> You can enroll by reaching out to us at:
+You can enroll by reaching out to us at:
 
->> Veni-vidi-vici<br>
->> <i>Email: <a href="mailto:ftcteam8535@gmail.com?subject=Interested in joining NovaLabs 8353!&Please respond.">ftcteam8535@gmail.com</a></i>
+> <i>Email: <a href="mailto:ftcteam8535@gmail.com?subject=Interested in joining NovaLabs 8353!&Please respond.">ftcteam8535@gmail.com</a></i>
 
 <br>

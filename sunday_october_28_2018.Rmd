@@ -1,0 +1,31 @@
+---
+title: "Sun. Oct 28, 2018 -- NovaLabs"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+<br>
+
+<center><img src="images/Sunday-10-28-2018-NovaLabs/IMG_20181028_143707903.jpg" width="350px"></center>  
+
+<p>
+<br>
+<br>
+<br>
+
+Robot arm design, NOVA LABS, VA 
+
+
+<br> 
+
+### More ...
+
+[Google drive images Sunday-10-28-2018-NovaLabs](https://drive.google.com/drive/folders/1-Q8-tyutqtYa_VY0iwTcotUcyw6IGAI3)
+
+
+<br>
+
+### Occassion
+Fixing robot control chains -- NovaLabs
