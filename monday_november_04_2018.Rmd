@@ -1,0 +1,36 @@
+---
+title: "Sun. Oct 07, 2018 -- NovaLabs"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+<br>
+
+<center>
+<img src="images/Sunday-10-07-2018-NovaLabs/IMG_20181007_155203833.jpg" width="350px">
+
+</center>  
+
+<p>
+<br>
+<br>
+<br>
+
+Assembling the playing field
+
+```{r eval=FALSE, echo=FALSE}
+"images/Sunday-10-07-2018-NovaLabs/IMG_20181007_155203833.jpg
+```
+
+<br> 
+
+### More ...
+
+[Google drive images Sunday-10-07-2018-NovaLabs](https://drive.google.com/drive/folders/1TgYwivyGl_R45P0yLfDSHxES6m2wuw5W?usp=sharing)
+
+<br>
+
+### Occassion
+Discuss arm design prototype -- NovaLabs
