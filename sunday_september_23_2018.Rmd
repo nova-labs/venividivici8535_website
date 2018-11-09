@@ -1,0 +1,34 @@
+---
+title: "Sun. Sep 23, 2018 -- NovaLabs"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+<br>
+
+<center><img src="images/Sunday-9-23-2018-NovaLabs/IMG_20180923_133519410.jpg" width="350px"></center>  
+
+<p>
+<br>
+<br>
+<br>
+
+Pictures taken during the teams visit to FTC Season 2018-2019 Kickoff at ECPI University, Manasas, VA.
+
+```{r eval=FALSE, echo=FALSE}
+"images/Sunday-9-9-2018-NovaLabs/IMG_20180909_150725496.jpg"
+```
+
+<br> 
+
+### More ...
+
+[images/Sunday-9-23-2018-NovaLabs/](images/Sunday-9-23-2018-NovaLabs/)
+
+
+<br>
+
+### Occassion
+Follow-up after FTC challenge for 2018-2019 announcement -- NovaLabs

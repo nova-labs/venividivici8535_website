@@ -1,0 +1,31 @@
+---
+title: "Thurs. Oct 11, 2018 -- NovaLabs"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+<br>
+
+<center><img src="images/Thursday-10-11-2018-NovaLabs/IMG_20181011_191300723.jpg" width="350px"></center>  
+
+<p>
+<br>
+<br>
+<br>
+
+Robot arm design, NOVA LABS, VA 
+
+
+<br> 
+
+### More ...
+
+[Google drive images Thursday-10-11-2018-NovaLabs](https://drive.google.com/drive/folders/1TgYwivyGl_R45P0yLfDSHxES6m2wuw5W?usp=sharing)
+
+
+<br>
+
+### Occassion
+Cut down linear actuator, arrival of new motors, problem with wheels identified, possible swith to a claw arm -- NovaLabs

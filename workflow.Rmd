@@ -8,8 +8,21 @@ output:
 
 <br>
 
-<center><img src="images/Sunday-9-9-2018-NovaLabs/IMG_20180909_155322587.jpg" width="512px"></center>  
+<center><img src="images/Sunday-9-9-2018-NovaLabs/IMG_20180909_140105370.jpg" width="512px"></center>  
 
+<br>
+<br>
+<br>
+
+## How to
+
+Readme files ...
+
+<a href="readme/build_app.PNG">Build code and load to SAMSUNG phone</a>
+
+```{r}
+"readme/build_app.PNG"
+```
 <p>
 <br>
 <br>
@@ -18,7 +31,7 @@ output:
 Assembling the playing field
 
 ```{r eval=FALSE, echo=FALSE}
-"images/Sunday-9-9-2018-NovaLabs/IMG_20180909_155322587.jpg"
+"images/Sunday-9-9-2018-NovaLabs/IMG_20180909_140105370.jpg"
 128*4
 ```
 

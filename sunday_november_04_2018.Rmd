@@ -1,0 +1,36 @@
+---
+title: "Sun. Nov 04, 2018 -- NovaLabs"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+<br>
+
+<center>
+<img src="images/Sunday-11-04-2018-NovaLabs/IMG_20181104_150028017_BURST000_COVER_TOP.jpg" width="350px">
+
+</center>  
+
+<p>
+<br>
+<br>
+<br>
+
+Assembling the ARM and reorganizing other parts
+
+```{r eval=FALSE, echo=FALSE}
+"images/Sunday-10-07-2018-NovaLabs/IMG_20181007_155203833.jpg
+```
+
+<br> 
+
+### More ...
+
+[Google drive images Sunday-11-04-2018-NovaLabs](https://drive.google.com/drive/folders/1DOjFhBXXFiD45k4-9guRkygxULLPGIh8)
+
+<br>
+
+### Occassion
+Discuss arm design prototype -- NovaLabs

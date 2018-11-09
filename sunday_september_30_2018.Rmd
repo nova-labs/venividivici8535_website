@@ -1,0 +1,31 @@
+---
+title: "Sun. Sep 30, 2018 -- NovaLabs"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+<br>
+
+<center><img src="images/Sunday-9-30-2018-NovaLabs/IMG_20180930_160817615.jpg" width="350px"></center>  
+
+<p>
+<br>
+<br>
+<br>
+
+Robot arm design, NOVA LABS, VA 
+
+
+<br> 
+
+### More ...
+
+[Google drive images Sunday-30-2018-NovaLabs](https://drive.google.com/drive/folders/1TgYwivyGl_R45P0yLfDSHxES6m2wuw5W?usp=sharing)
+
+
+<br>
+
+### Occassion
+Robot arm design -- NovaLabs
