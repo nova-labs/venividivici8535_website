@@ -8,9 +8,12 @@ output:
 
 <br>
 
-## Congratulations & Thank You Messages To All Team Members
+### Congratulations & Thank You Messages To All Team Members
 
 <center><img src="images/Saturday-11-17-2018-Orange_VA/Capture.PNG" width="350px"></center>  
+
+<br>
+
 
 ```yaml
 Congratulations and thank you (GameMasters-8535, aka Veni Vidi Vici) for your hard work, dedication, and success in today’s event at Orange County, VA. As you observed, there is nothing like a “pro” when it comes to commitment and team effort. You have proved to us (your mentors, parents, Coach Gary, and all the supporting staff) to us that hard work and coordination can accomplish anything. We are indeed very proud to be part of the GameMasters-8535 team and have no doubt that our team has elevated itself to another level of success in spite of the challenges that came our way. Congratulations!!!
