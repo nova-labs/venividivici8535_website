@@ -18,7 +18,18 @@ navbar:
       - text: 'Sun. Nov 04, 2018, NovaLabs'
         href: sunday_november_04_2018.html
       - text: 'Thur. Nov 08, 2018, NovaLabs'
-        href: thursday_november_08_2018.html       
+        href: thursday_november_11_2018.html       
+      - text: 'Sun. Nov 11, 2018, NovaLabs'
+        href: sunday_november_11_2018.html
+      - text: 'Mon. Nov 12, 2018, NovaLabs'
+        href: monday_november_12_2018.html
+      - text: 'Thurs. Nov 15, 2018, NovaLabs'
+        href: thursday_november_15_2018.html  
+      - text: 'Fri. Nov 16, 2018, NovaLabs'
+        href: friday_november_16_2018.html
+      - text: '*Sat. Nov 17, 2018, Orange, VA'
+        href: saturday_november_17_2018.html  
+        
         
       - text: "October"
       - text: 'Mon. Oct 01, 2018, NovaLabs'

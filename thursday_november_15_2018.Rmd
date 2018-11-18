@@ -1,0 +1,27 @@
+---
+title: "Thur. Nov 15, 2018 -- Orange, VA"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+<br>
+
+
+<center><img src="images/Thursday-11-15-2018-NovaLabs_Prep_for_Orange_VA/IMG_20181115_194344594_BURST001.jpg" width="350px"></center>  
+
+<br>
+
+Pictures taken in preparation for Orange Qualifiers, Orange, VA.
+
+<br> 
+
+### More ...
+
+[Google drive images Thursday-11-15-2018-Orange_prep](...)
+
+<br>
+
+### Occassion
+Prep for Orange. 

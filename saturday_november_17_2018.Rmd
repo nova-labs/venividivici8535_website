@@ -1,0 +1,39 @@
+---
+title: "Sat. Nov 17, 2018 -- Orange, VA"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+<br>
+
+## Congratulations & Thank You Messages To All Team Members
+
+<center><img src="images/Saturday-11-17-2018-Orange_VA/extra/Capture.PNG" width="350px"></center>  
+
+```yaml
+Congratulations and thank you (GameMasters-8535, aka Veni Vidi Vici) for your hard work, dedication, and success in today’s event at Orange County, VA. As you observed, there is nothing like a “pro” when it comes to commitment and team effort. You have proved to us (your mentors, parents, Coach Gary, and all the supporting staff) to us that hard work and coordination can accomplish anything. We are indeed very proud to be part of the GameMasters-8535 team and have no doubt that our team has elevated itself to another level of success in spite of the challenges that came our way. Congratulations!!!
+
+This project would not have attained this level of success without the great talents, cooperation and gameplay from superb team members like you. Thank you all for your unparallel contributions to this great team!!!
+You have demonstrated to us that no obstacles cannot be resolved through the collective effort of a well-combined team. Keep up this positive team collaboration spirit! 
+
+When a team works so hard to overcome their challenges, the team truly deserves a day off, so thanks to Coach Gary for giving everyone a day off to rest, think through our methods, strategies, and design rationales, to help us come up with superb enhancement strategies. 
+
+We (Coach Gary, mentors, parents, and support staff) wish you all the best of luck in your future project assignments. 
+
+Best of Luck,
+
+William Ampeh (Member of the Sofware Team)
+
+```
+<br> 
+
+### More ...
+
+[Google drive images Saturday-11-17-2018-Orange](https://drive.google.com/drive/folders/1TgYwivyGl_R45P0yLfDSHxES6m2wuw5W?usp=sharing)
+
+<br>
+
+### Occassion
+Announcing FTC's challenge for 2018-2019. 
